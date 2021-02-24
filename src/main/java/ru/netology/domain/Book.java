@@ -1,7 +1,6 @@
 package ru.netology.domain;
 
 import lombok.Data;
-import ru.netology.domain.Product;
 
 @Data
 public class Book extends Product {

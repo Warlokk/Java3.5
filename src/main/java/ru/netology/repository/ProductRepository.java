@@ -1,7 +1,11 @@
 package ru.netology.repository;
 
+import lombok.*;
 import ru.netology.domain.Product;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class ProductRepository {
     private Product[] items = new Product[0];
 
