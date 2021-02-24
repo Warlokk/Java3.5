@@ -17,12 +17,6 @@ public class Book extends Product {
 
     @Override
     public boolean matches(String search) {
-        if (super.matches(search)) {
-            return true;
-        }
-        if (this.getAuthor().equalsIgnoreCase(search)) {
-            return true;
-        }
-        return false;
+        return  (super.matches(search)) || (this.getAuthor().equalsIgnoreCase(search));
     }
 }
